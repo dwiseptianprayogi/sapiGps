@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvLocationSapiVal" type="id" />
+    <item name="tvDetakJantungGpsVal" type="id" />
+    <item name="tvDetakJantungGpsValBpm" type="id" />
+    <item name="tvSuhuGpsVal" type="id" />
+    <item name="tvsuhuGpsValBpm" type="id" />
+</resources>

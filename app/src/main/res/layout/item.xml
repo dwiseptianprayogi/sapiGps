@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<layout xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        tools:context=".item">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgItem"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/ic_baseline_location_on_24" />
+
+            <TextView
+                android:id="@+id/tvIdSapi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/imgItem"
+                android:text="ID Ternak: " />
+            <TextView
+                android:id="@+id/tvIdSapiVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No detected"
+                android:layout_toRightOf="@+id/tvIdSapi"
+                />
+
+            <TextView
+                android:id="@+id/DetakJantungSapi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvIdSapi"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/imgItem"
+                android:text="Detak Jantung Ternak:" />
+
+            <TextView
+                android:id="@+id/DetakJantungSapiVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvIdSapi"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/DetakJantungSapi"
+                android:text="0" />
+            <TextView
+                android:id="@+id/DetakJantungSapiValBpm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvIdSapi"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/DetakJantungSapiVal"
+                android:text="bpm" />
+
+            <TextView
+                android:id="@+id/SuhuSapi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DetakJantungSapi"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/imgItem"
+                android:text="Suhu ternak" />
+            <TextView
+                android:id="@+id/SuhuSapiVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DetakJantungSapi"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/SuhuSapi"
+                android:text="0" />
+            <TextView
+                android:id="@+id/SuhuSapiValCel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DetakJantungSapi"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/SuhuSapiVal"
+                android:text="°C" />
+
+            <TextView
+                android:id="@+id/tvLocaion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SuhuSapi"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/imgItem"
+                android:text="Lokasi Sapi Saat ini:" />
+            <TextView
+                android:id="@+id/tvLocaionVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Location Detected"
+                android:layout_below="@+id/tvLocaion"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/imgItem"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
